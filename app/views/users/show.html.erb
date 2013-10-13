@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3">
+    <p class="text"><i>We got you, thanks for signing up!</i> <% if @user.count %>You're referral count is <%= @user.count %>.<% else %>Help spread the word about BuyStartups.co by sharing your referral URL below.<% end %></p>
+    <p class="text">
+      Link: <a href="#"><%= "#{root_url}?code=#{@user.code}" %></a><br />
+      <a href="https://twitter.com/intent/tweet?counturl=http://wwww.roadsidely.com/&related=buystartups&url=<%=u "#{root_url}?code=#{@user.code}"%>&text=Buy+and+sell+high-quality+startups+for+free+with+@BuyStartups.+Sign+up+at&" class="btn share twitter" target="_blank"><img src="/assets/twitter.png" style="margin-right:10px;height:20px;">Tweet</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=<%=u "#{root_url}?code=#{@user.code}"%>" class="btn share facebook" target="_blank"><img src="/assets/facebook.png" style="margin-right:10px;height:20px;">Post</a>
+      <a href="https://plus.google.com/share?url=<%= "#{root_url}?code=#{@user.code}" %>" onclick="javascript:window.open(this.href,
+        '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn share googleplus"><img src="/assets/gplus.png" style="margin-right:10px;height:20px;">Share</a>
+      </p>
+  </div>
+</div>
+
+

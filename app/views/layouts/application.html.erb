@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BuyStartups - buy and sell startups</title>
+  <META NAME="Description" CONTENT="The best place to buy and sell high-quality startups, products, and apps.">
+  <meta property="og:image" content=""/>
+  <meta property="og:url" content="http://www.buystartups.co/"/>
+  <meta property="og:site_name" content="BuyStartups.com - buy and sell startups"/>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <style style="text/css">
+  html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    padding-top: 50px;
+    color: #000;
+  }
+  #full-screen-background-image {
+    z-index: -999;
+    min-height: 100%;
+    min-width: 1200px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  h1,h3 {
+    text-align: center;
+    line-height: 1.3;
+    color: #000;
+  }
+  .text {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+    line-height: 120%;
+  }
+  .closing,.closing a {
+    font-size: 13px;
+    margin-top: 30px;
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 300;
+    opacity: .6;
+  }
+  .form-control {
+    font-size: 22px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .btn.signup {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .btn.share {
+    margin-top: 10px;
+  }
+  .btn.twitter {
+    background-color: #4099ff;
+    color: #fff;
+    border: none;
+  }
+  .btn.facebook {
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+  }
+  .btn.googleplus {
+    background-color: #d94834;
+    color: #fff;
+    border: none;
+  }
+  .btn.linkedin {
+    background-color: #007bb6;
+    color: #fff;
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img alt="full screen background image" src="/assets/background.jpg" id="full-screen-background-image" /> 
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2"><h1><img src="/assets/icon.png" style="margin-right:10px;height:35px;margin-top:-5px;">BuyStartups</h1><p class="lead text-center">The best place to buy and sell high-quality startups, products, and apps.</p></div>
+  </div>
+  <%= yield %>
+  <br />
+
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <div class="row">
+        <div class="col-lg-4"><p class="text"><img src="/assets/thumb.png" style="height:40px;margin-bottom:10px;"><br /><b>High Quality</b><br />Each listing is manually screened. No turnkey sites.</p></div>
+        <div class="col-lg-4"><p class="text"><img src="/assets/data.png" style="height:40px;margin-bottom:10px;"><br /><b>Due Diligence</b><br />Data to help you buy the right startups and sell to the right people.</p></div>
+        <div class="col-lg-4"><p class="text"><img src="/assets/coins.png" style="height:40px;margin-bottom:10px;"><br /><b>Completely Free</b><br />No listing or success fees for sellers or buyers.</p></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44826863-1', 'buystartups.co');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
